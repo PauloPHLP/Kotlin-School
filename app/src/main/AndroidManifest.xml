@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.paulo.trabalhofinalandroid">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/cap"
+        android:label="P e M"
+        android:roundIcon="@drawable/cap"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.activity.common.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.activity.professor.ControleDeProfessoresActivity" />
+        <activity android:name=".activity.activity.materia.ControleDeMateriasActivity" />
+        <activity android:name=".activity.activity.professor.EditarProfessorActivity" />
+        <activity android:name=".activity.activity.professor.ListarProfessoresActivity" />
+        <activity android:name=".activity.activity.professor.ExcluirProfessorActivity" />
+        <activity android:name=".activity.activity.materia.AdicionarMateriaActivity" />
+        <activity android:name=".activity.activity.materia.EditarMateriaActivity" />
+        <activity android:name=".activity.activity.materia.ListarMateriasActivity" />
+        <activity android:name=".activity.activity.materia.ExcluirMateriaActivity" />
+        <activity android:name=".activity.activity.professor.AdicionarProfessorActivity" />
+        <activity android:name=".activity.activity.materia.DetalhesMateriaActivity" />
+        <activity android:name=".activity.activity.professor.DetalhesProfessorActivity"></activity>
+    </application>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+</manifest>

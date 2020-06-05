@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".activity.activity.materia.ControleDeMateriasActivity">
+
+        <TextView
+            android:id="@+id/txtDireitos"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/txt_direitos"
+            app:fontFamily="sans-serif-condensed"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgBtnExcluir" />
+
+        <TextView
+            android:id="@+id/txtPLeOzieckDesenvolvimento"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/txt_PLeOzieckDesenvolvimento"
+            app:fontFamily="cursive"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtDireitos" />
+
+        <TextView
+            android:id="@+id/txtPauloEOzieck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="32dp"
+            android:text="@string/txt_PauloEOzieck"
+            app:fontFamily="sans-serif-smallcaps"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPLeOzieckDesenvolvimento" />
+
+        <TextView
+            android:id="@+id/txtTitleMateria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/txt_title"
+            android:textAllCaps="false"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:fontFamily="sans-serif-smallcaps"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtSubtitleControle" />
+
+        <TextView
+            android:id="@+id/txtSubtitleControle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/txt_SubtitleControleMaterias"
+            android:textStyle="bold"
+            app:fontFamily="casual"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/imgBtnAdicionar"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="200dp"
+            android:layout_marginRight="200dp"
+            android:adjustViewBounds="false"
+            android:contentDescription="@string/img_btn_adicionar_professor"
+            android:cropToPadding="true"
+            android:onClick="imgBtnAdicionarMateriaOnClick"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTitleMateria"
+            app:srcCompat="@drawable/adicionar_materia" />
+
+        <ImageButton
+            android:id="@+id/imgBtnExcluir"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:adjustViewBounds="false"
+            android:contentDescription="@string/img_btn_excluir_materia"
+            android:cropToPadding="true"
+            android:onClick="imgBtnExcluirMateriaOnClick"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgBtnEditar"
+            app:srcCompat="@drawable/remover_materia" />
+
+        <ImageButton
+            android:id="@+id/imgBtnListarMaterias"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="200dp"
+            android:layout_marginRight="200dp"
+            android:contentDescription="@string/img_btn_listar_materias"
+            android:onClick="imgBtnListarMateriasOnClick"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgBtnAdicionar"
+            app:srcCompat="@drawable/lista_materia" />
+
+        <ImageButton
+            android:id="@+id/imgBtnEditar"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:contentDescription="@string/img_btn_editar_professor"
+            android:onClick="imgBtnEditarMateriaOnClick"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTitleMateria"
+            app:srcCompat="@drawable/editar_materia" />
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
