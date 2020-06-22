@@ -1,7 +1,7 @@
 # 🖥️ School Project
 
 <h1 align="center">
-  <img src=".github/kotlin2.png" width="200px" />
+  <img src=".github/kotlinLogo.svg" width="200px" />
 </h1>
 
 ## 🔎️ Description
